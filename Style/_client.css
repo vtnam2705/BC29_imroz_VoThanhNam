@@ -1,0 +1,119 @@
+#client{
+    padding: 120px 0;
+}
+
+.client__heading{
+    margin-bottom: 50px;
+}
+
+.client__title span{
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    background: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, var(--pink-color) 79.69%);
+}
+
+.client__title span.subtitle{
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.client__title h2{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 62px;
+    margin-bottom: 20px;
+}
+
+.client__title p{
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--gray-color);
+}
+
+.client__brand--list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-left: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.client__brand--list li{
+    text-align: center;
+    height: 214px;
+    line-height: 214px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    flex-basis: 33.33%;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.client__brand--list li:hover{
+    background-color: var(--pink-color);
+    transform: scale(1.1);
+    border-radius: 6px;
+}
+
+.client__brand--list li img{
+    opacity: 0.8;
+    transition: 0.3s;
+    max-height: 110px;
+    max-width: 150px;
+}
+
+
+
+
+/* Responsive */
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .client__brand--list li{
+        flex-basis: 100%;
+    }
+
+    .client__brand--list li:hover{
+        background-color: var(--pink-color);
+        border-radius: 0;
+        transform: none;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .client__brand--list li{
+        flex-basis: 100%;
+    }
+
+    .client__brand--list li:hover{
+        background-color: var(--pink-color);
+        border-radius: 0;
+        transform: none;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .client__brand--list li{
+        flex-basis: 50%;
+    }
+
+    .client__brand--list li:hover{
+        background-color: var(--pink-color);
+        border-radius: 0;
+        transform: none;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
